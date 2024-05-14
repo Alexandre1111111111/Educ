@@ -1,7 +1,7 @@
 header {
     width: 100%;
     height: 16vh;
-    background-color: rgb(25, 133, 160);
+    background: linear-gradient(90deg, rgba(13,5,144,1) 0%, rgba(109,177,231,1) 18%, rgba(0,146,255,1) 100%);
     border: 0.5vh solid #000;
     position: fixed;
 }
@@ -13,7 +13,7 @@ body {
 footer {
     width: 100%;
     height: 40vh;
-    background-color: rgb(14, 89, 158);
+    background: linear-gradient(90deg, rgba(13,5,144,1) 0%, rgba(109,177,231,1) 53%, rgba(0,146,255,1) 100%);;
     border: 0.5vh solid #000;
     display: flex;
     align-items: center;
@@ -40,13 +40,21 @@ header img {
 .navbar button {
     width: 100%;
     cursor: pointer;
-    background-color: rgb(11, 136, 94);
+    background-color: rgb(21, 173, 148);
     border: 0.3vh solid #000;
+    font-size: 2vh;
+    transition-duration: 0.1s;
+}
+.navbar button:hover {
+    background-color: rgb(36, 161, 120);
+}
+.navbar button:active {
+    background-color: rgb(30, 116, 87);
 }
 footer img {
     height: 23vh;
     margin: 0 auto;
-    background-color: blue;
+    background-color: rgb(24, 24, 134);
     border-radius: 30vh;
     padding: 2vh;
     border: 0.3vh solid #000;
