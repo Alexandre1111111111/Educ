@@ -1,119 +1,82 @@
-header {
-    width: 100%;
-    height: 16vh;
-    background: linear-gradient(90deg, rgba(13,5,144,1) 0%, rgba(109,177,231,1) 18%, rgba(0,146,255,1) 100%);
-    border: 0.5vh solid #000;
-    position: fixed;
-    top: 0;
-}
 body {
     margin: 0 auto;
     background-color: rgb(13, 190, 190);
     overflow-x: hidden;
+    background-image: url(https://todospelaeducacao.org.br/wordpress/wp-content/uploads/2020/10/thumb-irs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 html {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
 }
-footer {
-    width: 100%;
-    height: 40vh;
-    background: linear-gradient(90deg, rgba(13,5,144,1) 0%, rgba(109,177,231,1) 53%, rgba(0,146,255,1) 100%);;
-    border: 0.5vh solid #000;
-    display: flex;
-    align-items: center;
-}
-.educ {
-    display: flex;
-}
-.educ, .educ2, .educ3, .educ4, .educ5, .educ6, .educ7 {
-    width: 100%;
-    height: 90vh;
-    background-color: rgba(0, 0, 0, 0.644);
-    align-items: center;
-    justify-content: center;
-}
-.educ2, .educ3, .educ4, .educ5, .educ6, .educ7 {
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-.sb {
+.pr {
+    width: 60%;
     height: 100%;
-    width: 70%;
-    margin: 0;
-    margin-top: 10vh;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    background-color: #0000008e;
+    border: 0.3vh solid #000000;
+    border-radius: 5vh;
 }
-.sb h1 {
+.pr img {
+    height: 50vh;
+    position: relative;
+    right: 5vh;
+    opacity: 0;
+    animation-name: mover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vh;
+    position: relative;
+    right: 5vh;
+    opacity: 0;
+    animation-name: mover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.btns button {
+    height: 10vh;
+    cursor: pointer;
     font-size: 5vh;
-    color: #3ad0fd;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    text-align: center;
-    background-color: #1f9654;
-    border: 0.3vh solid #fff;
-    width: fit-content;
-    padding: 1vh;
-    border-radius: 10vh;
-}
-.sb h2 {
-    font-size: 4vh;
-    color: #fff;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    text-align: center;
-}
-.sb a {
-    font-size: 4vh;
-    color: #fff;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    text-align: center;
-}
-.sb p {
-    font-size: 4vh;
-    color: #fff;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    text-align: center;
-}
-.navbar {
-    display: flex;
     width: 100%;
-    background-color: aqua;
-    height: 4vh;
-    position: absolute;
-    bottom: 0;
-    border: 0.3vh solid #000;
+    border-radius: 5vh;
+    background-color: rgb(110, 224, 171);
+    transition-duration: 0.3s;
 }
-header img {
-    height: 13vh;
+.btns a {
+    height: 10vh;
     cursor: pointer;
-    margin-left: 2vh;
-    display: block;
+    font-size: 5vh;
+    border-radius: 5vh;
+    transition-duration: 0.3s;
 }
-.navbar button {
-    width: 100%;
-    cursor: pointer;
-    background-color: rgb(21, 173, 148);
-    border: 0.3vh solid #000;
-    font-size: 2vh;
-    transition-duration: 0.1s;
+.btns button:hover {
+    background-color: rgb(33, 218, 132);
 }
-.navbar button:hover {
-    background-color: rgb(36, 161, 120);
-}
-.navbar button:active {
-    background-color: rgb(30, 116, 87);
-}
-footer img {
-    height: 23vh;
-    cursor: pointer;
-    margin: 0 auto;
-    background-color: rgb(24, 24, 134);
-    border-radius: 30vh;
-    padding: 2vh;
-    border: 0.3vh solid #000;
-    display: block;
+@keyframes mover {
+    0% {
+        right: 5vh;
+        opacity: 0;
+    }
+    100% {
+        right: 0vh;
+        opacity: 1;
+    }
 }
