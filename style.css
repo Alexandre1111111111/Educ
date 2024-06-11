@@ -4,11 +4,17 @@ header {
     background: linear-gradient(90deg, rgba(13,5,144,1) 0%, rgba(109,177,231,1) 18%, rgba(0,146,255,1) 100%);
     border: 0.5vh solid #000;
     position: fixed;
+    top: 0;
 }
 body {
     margin: 0 auto;
     background-color: rgb(13, 190, 190);
     overflow-x: hidden;
+}
+html {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 footer {
     width: 100%;
@@ -19,9 +25,58 @@ footer {
     align-items: center;
 }
 .educ {
+    display: flex;
+}
+.educ, .educ2, .educ3, .educ4, .educ5, .educ6, .educ7 {
     width: 100%;
     height: 90vh;
     background-color: rgba(0, 0, 0, 0.644);
+    align-items: center;
+    justify-content: center;
+}
+.educ2, .educ3, .educ4, .educ5, .educ6, .educ7 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.sb {
+    height: 100%;
+    width: 70%;
+    margin: 0;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.sb h1 {
+    font-size: 5vh;
+    color: #3ad0fd;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+    background-color: #1f9654;
+    border: 0.3vh solid #fff;
+    width: fit-content;
+    padding: 1vh;
+    border-radius: 10vh;
+}
+.sb h2 {
+    font-size: 4vh;
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+}
+.sb a {
+    font-size: 4vh;
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+}
+.sb p {
+    font-size: 4vh;
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
 }
 .navbar {
     display: flex;
